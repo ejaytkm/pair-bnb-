@@ -1,4 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
-  layout 'mailer'
+  Clearance.configure do |config|
+  config.mailer_sender = "pair_bnb@egoogle.com"
+end
 end
